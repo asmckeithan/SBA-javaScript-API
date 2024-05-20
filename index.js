@@ -21,9 +21,7 @@ async function dogAPI() {
 }
 
 dogAPI();
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
+
 
 
 // url = `https://api.thedogapi.com/v1/images/search?limit=10`;
