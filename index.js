@@ -21,24 +21,51 @@ async function dogAPI() {
 }
 
 dogAPI();
+
+const type = document.getElementById('type')
+// const submit = document.getElementById('submit')
+// submit.addEventListener("click", dogJson)
+// async function dogJson(){
 // fetch('https://jsonplaceholder.typicode.com/posts', {
 //   method: 'POST',
+
 //   body: JSON.stringify({
-//     title: 'foo',
-//     body: 'bar',
-//     userId: 1,
+//     type: "",
+//     color: "",
+//     age: "",
 //   }),
 //   headers: {
 //     'Content-type': 'application/json; charset=UTF-8',
 //   },
 // })
 //   .then((response) => response.json())
-//   .then((json) => () {
-// console.log(json)
-//   });
+//   .then((json) => (console.log(json)))
+// } 
+
 
 //   const dogBreed = document.getElementById('type')
 //   const inputdogBreed = data.title
+const ajax = async (config) => {
+    const request = await fetch('https://jsonplaceholder.typicode.com/post', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(config.ajax)
+    });
+    res = await request.json();
+    console.log('response', res)
+    return response
+}
+
+// usage
+response = ajax({
+    method: 'POST',
+    url: 'example.com',
+    payload: {"name": "Stackoverflow"}
+})
+
+
 let myAudio = document.querySelector('#audio')
 myAudio.play()
-  
