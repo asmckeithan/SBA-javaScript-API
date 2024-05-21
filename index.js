@@ -1,3 +1,5 @@
+//Seperate each section and import data from new files 
+
 //API fetch 
 //first find the element to attach API to
 const button = document.getElementById('btn')
@@ -22,49 +24,35 @@ async function dogAPI() {
 
 dogAPI();
 
-const type = document.getElementById('type')
-// const submit = document.getElementById('submit')
-// submit.addEventListener("click", dogJson)
-// async function dogJson(){
-// fetch('https://jsonplaceholder.typicode.com/posts', {
-//   method: 'POST',
+// const type = document.getElementById('type')
 
-//   body: JSON.stringify({
-//     type: "",
-//     color: "",
-//     age: "",
-//   }),
-//   headers: {
-//     'Content-type': 'application/json; charset=UTF-8',
-//   },
-// })
+
+//--------------------ERROR-------------------
+// unable to push input into JSON format . Please advise 
+// fetch('https://jsonplaceholder.typicode.com/posts')
 //   .then((response) => response.json())
-//   .then((json) => (console.log(json)))
-// } 
+//   .then((json) => console.log(json));
+  
+// const ajax = async (config) => {
+//     const request = await fetch('https://jsonplaceholder.typicode.com/post', {
+//         method: 'post',
+//         headers: {
+//             'Accept': 'application/json',
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(config.ajax)
+//     });
+//     res = await request.json();
+//     console.log('response', res)
+//     return response
+// }
 
-
-//   const dogBreed = document.getElementById('type')
-//   const inputdogBreed = data.title
-const ajax = async (config) => {
-    const request = await fetch('https://jsonplaceholder.typicode.com/post', {
-        method: 'post',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(config.ajax)
-    });
-    res = await request.json();
-    console.log('response', res)
-    return response
-}
-
-// usage
-response = ajax({
-    method: 'POST',
-    url: 'example.com',
-    payload: {"name": "Stackoverflow"}
-})
+// // usage
+// response = ajax({
+//     method: 'POST',
+//     url: 'example.com',
+//     payload: {"name": "Stackoverflow"}
+// })
 
 
 let myAudio = document.querySelector('#audio')

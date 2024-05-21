@@ -1,3 +1,5 @@
+
+
 body{
    background-image: linear-gradient(to right, rgb(221, 224, 243), rgb(139, 208, 243), rgb(206, 213, 231));
 }
@@ -30,4 +32,18 @@ h1{
     display: block;
     text-align: center;
     
+}
+p{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(166, 63, 189);
+    text-decoration-style: bold;
+}
+#dogInfo{
+    height: 80px;
+    /* width: 400px; */
+    display: block;
+    margin-right: 50%;
+    align-content: center;
+    text-align: center;
 }
