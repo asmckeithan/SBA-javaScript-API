@@ -13,15 +13,21 @@ h1{
     text-align: center;
 }
 #btn{
-        background-color: #a4d0f3;
+        background-color: #6890c1;
         border: none;
         color: black;
-        padding: 10px 20px;
+        padding: 10px 30px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         margin: 4px 2px;
         cursor: pointer;
-        border-radius: 16px;
+        border-radius: 20px;
     box-shadow: black 2px 3px 4px;
+}
+#dogEl{
+    margin: 0;
+    display: block;
+    text-align: center;
+    
 }
