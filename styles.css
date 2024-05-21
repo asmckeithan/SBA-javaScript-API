@@ -12,3 +12,16 @@ h1{
     margin: 0;
     text-align: center;
 }
+#btn{
+        background-color: #a4d0f3;
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+    box-shadow: black 2px 3px 4px;
+}
