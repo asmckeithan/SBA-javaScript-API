@@ -40,10 +40,32 @@ p{
     text-decoration-style: bold;
 }
 #dogInfo{
-    height: 80px;
+    height: 150px;
     /* width: 400px; */
     display: block;
-    margin-right: 50%;
+    margin: 0;
     align-content: center;
     text-align: center;
+}
+#type{
+    height: 50px;
+    width: auto;
+    text-align: center;
+    box-shadow: black 3px 2px 4px;
+}
+#color{
+    height: 50px;
+    text-align: center;
+    box-shadow: black 3px 2px 4px;
+}
+#age{
+    height: 50px;
+    text-align: center;
+    box-shadow: black 3px 2px 4px;
+}
+#details{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    box-shadow: black 3px 2px 4px;
 }

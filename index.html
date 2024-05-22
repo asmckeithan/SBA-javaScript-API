@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SBA-JS Web Application</title>
-    <script defer src="index.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="form.js"></script>
     <link rel="stylesheet" href="styles.css">
   
 </head>
 <body>
     <h1>For all my DOG Lovers</h1>
-    <audio id="audio" autoplay >
+    <audio id="audio" autoplay="true">
         <source src="https://www.televisiontunes.com/uploads/audio/South%20Park%20-%20Who%20Let%20The%20Dogs%20Out.mp3" type="audio/mpeg">
     </audio>
+    <p>Create your Own Collections of your Favorite Dogs Below </p>
+    <div>
+        <form id="dogInfo" action="text" method="POST">
+            <input id="type" type="text" placeholder="Dog Breed" value="">
+            <input id="color" type="text" placeholder="color"  value="">
+            <input id="age" type="text" placeholder="Age" value="">
+            <input id="details" type="text" placeholder="Description" value="">
+            <br>
+            <button id="submit" value="submit">Submit</button>
+        </form>
+
+    </div>
+
     <div>
         <div id="imageBlock">
             <img id="dog_image" height="500px"></img>
@@ -21,17 +35,7 @@
     <div id="dogEl">
         <button id="btn">Show More</button>
     </div>
-    <p>Create your Own Collections of your Favorite Dogs Below </p>
-    <div id="dogInfo">
-        <form  action="text" method="POST">
-            <input id="type" type="text" placeholder="Dog Breed" value="">
-            <input id="color" type="text" placeholder="color"  value="">
-            <input id="age" type="text" placeholder="Age" value="">
-            <input id="details" type="text" placeholder="Description" value="">
-            <button id="submit" value="submit">Submit</button>
-        </form>
-
-    </div>
+  
 
 </body>
 </html>
